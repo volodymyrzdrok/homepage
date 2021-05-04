@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - 11.13.0
-script:
+ script:
   - npm install --global workbox-cli
   - workbox generateSW workbox-config.js
 deploy:
