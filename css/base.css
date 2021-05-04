@@ -33,8 +33,8 @@ body {
         apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
-        Roboto,
-        Oxygen-Sans,
+        Roboto,  
+         Oxygen-Sans,
         Ubuntu,
         Cantarell,
         "Helvetica Neue",
@@ -52,6 +52,7 @@ h5 {
     margin: 0 0 1rem 0;
     font-weight: bold;
     padding: 0;
+    color:rgb(3, 37, 65);
 }
 
 h1:last-child,
@@ -69,7 +70,7 @@ h3 {
 }
 
 h1 {
-    font-weight: 900;
+    font-weight: 800;
     font-size: 1.5rem;
     margin-bottom: 0;
 }
@@ -1274,4 +1275,7 @@ canvas {
 }
 footer {margin: 0;
     height: 0;
+}
+.italic{
+    font-style: italic;
 }
