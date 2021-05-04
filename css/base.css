@@ -1,9 +1,9 @@
 ::-moz-selection {
-    background: yellow;
+    background: rgb(230, 115, 0,0.09)
 }
 
 ::selection {
-    background: yellow;
+    background: rgb(230, 115, 0,0.09);
 }
 
 *,
@@ -24,6 +24,8 @@ body {
     margin: 0;
     line-height: 1.4285em;
     color: rgba(0, 0, 0, 0.87);
+    /* background-color: #222; */
+     
 }
 
 body {
@@ -37,6 +39,8 @@ body {
         Cantarell,
         "Helvetica Neue",
         sans-serif;
+        
+      
 }
 
 h1,
@@ -71,7 +75,7 @@ h1 {
 }
 
 h2 {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 3rem;
     letter-spacing: 0.25em;
 }
@@ -178,7 +182,7 @@ ol.inverted>li::before {
 }
 
 a {
-    color: blue;
+    color: #e67300;
     background-color: transparent;
     text-decoration: none;
 }
@@ -302,7 +306,12 @@ article {
     position: relative;
     padding: 3em;
     background: white;
-    box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.1);
+  border-radius: 2px;
+    /* box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.1);
+     */
+   box-shadow: 4px 7px 24px 8px rgba(255, 255, 255, 0.2);
+   
+
     transition: box-shadow 0.2s linear;
 }
 
@@ -322,12 +331,15 @@ article {
     border-width: 1em;
     border-style: solid;
     pointer-events: none;
-    transition: border-color 0.2s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
 }
 
 @media only screen {
     .page:hover {
-        box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.3);
+        /* box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.3);
+         */
+         box-shadow: 8px 14px 48px 16px rgba(255, 255, 255, 0.4);
+         
     }
 }
 
@@ -1131,12 +1143,20 @@ header+main {
 main {
     overflow: auto;
     z-index: 2;
-    background: white;
+
+    /* background: white; */
+      /* background: 
+      linear-gradient(0deg, rgba(255, 128, 0, .75), rgb(3, 37, 65)), */
+      /* url(https://media.giphy.com/media/97aL1TzOeZ7QHlVV9N/giphy.gif); */
+
+      /* background-size: cover; */
+    /*  */
     position: relative;
 }
 
 main:nth-last-child(3) {
     margin-bottom: 50vh;
+    /* color: #032541; */
 }
 
 footer {
@@ -1190,4 +1210,68 @@ footer {
 }
 .upper-description{
     text-transform: uppercase;
+}
+
+
+/*  PAARTICLESSS */
+/* ---- reset ---- */
+
+
+canvas {
+    display: block; 
+     vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: fixed;
+    background:
+        linear-gradient(0deg, rgba(255, 128, 0, .75), rgb(3, 37, 65));
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+footer {margin: 0;
+    height: 0;
 }
